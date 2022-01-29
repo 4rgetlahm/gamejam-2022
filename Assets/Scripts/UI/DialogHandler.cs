@@ -17,7 +17,6 @@ public class DialogHandler : MonoBehaviour
     
     public static bool IsAnyDialogOpen()
     {
-        Debug.Log(GameObject.FindGameObjectsWithTag("Dialog").Length);
         
         return GameObject.FindGameObjectsWithTag("Dialog").Length != 0;
         
