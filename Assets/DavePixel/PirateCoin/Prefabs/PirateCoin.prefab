@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3489686431026566396}
   - component: {fileID: 596897647679864432}
   - component: {fileID: 2142513600878350909}
+  - component: {fileID: 2498329123710752045}
   m_Layer: 0
   m_Name: PirateCoin
   m_TagString: Untagged
@@ -116,3 +117,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2498329123710752045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129200342344496425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624fab85dd06a93458139c3c1c2cd5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
