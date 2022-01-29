@@ -34,12 +34,13 @@ public class InteractionHandler : MonoBehaviour
             if (Physics.Raycast(ray, out hitPoint))
             {
                 InteractableObject interactableObject = interactables.Where(i => i.gameObject.Equals(hitPoint.transform.gameObject)).FirstOrDefault();
-                if (interactableObject == null)
+                if (interactableObject == null){
                     return;
                 }
                 GameObject.FindGameObjectWithTag("DialogHandler").GetComponent<DialogHandler>().OpenDialog("Toss a coin to determine the result of your action?", OnGoodClick, delegate { });
                
-                if (IsNear(interactableObject)){
+                if (IsNear(interactableObject))
+                {
                     GameObject.Destroy(interactableObject.gameObject);
                 }
             }
