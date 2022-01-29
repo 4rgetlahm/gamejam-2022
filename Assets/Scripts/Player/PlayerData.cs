@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerData : MonoBehaviour
@@ -9,6 +10,14 @@ public class PlayerData : MonoBehaviour
     public int wood = 0;
     public int stone = 0;
     public int bones = 0;
+
+    [SerializeField]
+    private TMP_Text bonesText;
+    [SerializeField]
+    private TMP_Text woodText;
+    [SerializeField]
+    private TMP_Text stoneText;
+    
 
     public void Damage(float damage){
         if(this.health - damage <= 0f){
@@ -23,6 +32,12 @@ public class PlayerData : MonoBehaviour
 
     private void OnDeath(){
         Debug.Log("Death");
+    }
+
+    void Update(){
+        this.bonesText.text = bones.ToString();
+        this.woodText.text = wood.ToString();
+        this.stoneText.text = stone.ToString();
     }
 
     
