@@ -9,12 +9,18 @@ public class DialogHandler : MonoBehaviour
     private GameObject dialog;
 
     public void OpenDialog(string text, Action primaryAction, Action secondaryAction){
-        if (GameObject.FindGameObjectWithTag("Dialog") == null) { 
-            GameObject copiedDialog = GameObject.Instantiate(dialog, this.transform);
-            copiedDialog.GetComponent<DialogData>().ChangeText(text);
-            copiedDialog.GetComponent<DialogData>().ChangeActions(primaryAction, secondaryAction);
-            
-        }
+        GameObject copiedDialog = GameObject.Instantiate(dialog, this.transform);
+        copiedDialog.tag = "Dialog";
+        copiedDialog.GetComponent<DialogData>().ChangeText(text);
+        copiedDialog.GetComponent<DialogData>().ChangeActions(primaryAction, secondaryAction);
+    }
+    
+    public static bool IsAnyDialogOpen()
+    {
+        Debug.Log(GameObject.FindGameObjectsWithTag("Dialog").Length);
+        
+        return GameObject.FindGameObjectsWithTag("Dialog").Length != 0;
+        
     }
 
 }
