@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,19 +7,16 @@ public class DialogHandler : MonoBehaviour
 {
     [SerializeField]
     private GameObject dialog;
-    void Start()
-    {
 
-    }
+    public void OpenDialog(string text, Action primaryAction, Action secondaryAction){
+        if (GameObject.FindGameObjectWithTag("Dialog") == null) { 
 
-    public void OpenDialog(){
-        GameObject.Instantiate(dialog, this.transform);
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+            GameObject copiedDialog = GameObject.Instantiate(dialog, this.transform);
+            copiedDialog.GetComponent<DialogData>().ChangeText(text);
+            copiedDialog.GetComponent<DialogData>().ChangeActions(primaryAction, secondaryAction);
+            
+        }
         
     }
+
 }

@@ -31,9 +31,15 @@ public class InteractionHandler : MonoBehaviour
                 if(interactableObject == null){
                     return;
                 }
-
-                GameObject.Destroy(interactableObject.gameObject);
+                GameObject.FindGameObjectWithTag("DialogHandler").GetComponent<DialogHandler>().OpenDialog("Toss a coin to determine the result of your action?", OnGoodClick, delegate { });
+               
             }
         }
+    }
+
+    public void OnGoodClick()
+    {
+        Debug.Log(":)))))))");
+        //GameObject.Destroy(interactableObject.gameObject);
     }
 }
