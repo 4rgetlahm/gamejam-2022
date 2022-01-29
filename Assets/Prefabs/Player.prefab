@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5570708084834737051}
   - component: {fileID: 6833578159151605262}
   - component: {fileID: 3361571075922235949}
+  - component: {fileID: 5825042256038848260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -69,6 +70,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localCamera: {fileID: 0}
   navMeshAgent: {fileID: 0}
+--- !u!114 &5825042256038848260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655904813207671322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587f71e4767c14166811b715de5f7959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sucessRate: 50
+  wood: 0
+  stone: 0
+  bones: 0
 --- !u!1 &3884600399941944614
 GameObject:
   m_ObjectHideFlags: 0
