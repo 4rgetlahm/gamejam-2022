@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
-    private float health = 100f;
+    private float health = 50f;
     public float sucessRate = 50f;
     public int wood = 0;
     public int stone = 0;
@@ -17,6 +18,9 @@ public class PlayerData : MonoBehaviour
     private TMP_Text woodText;
     [SerializeField]
     private TMP_Text stoneText;
+
+    [SerializeField]
+    private Image healthBar;
     
 
     public void Damage(float damage){
@@ -34,10 +38,12 @@ public class PlayerData : MonoBehaviour
         Debug.Log("Death");
     }
 
+
     void Update(){
         this.bonesText.text = bones.ToString();
         this.woodText.text = wood.ToString();
         this.stoneText.text = stone.ToString();
+        healthBar.fillAmount = health/100.0f;
     }
 
     
