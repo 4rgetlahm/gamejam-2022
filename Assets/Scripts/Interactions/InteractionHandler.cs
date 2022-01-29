@@ -111,7 +111,7 @@ public class InteractionHandler : MonoBehaviour
 
     public void OnGoodClick()
     {
-        Debug.Log(":)))))))");
+        
         //GameObject.Destroy(interactableObject.gameObject);
     }
     private bool IsNear(InteractableObject intObj)
