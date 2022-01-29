@@ -27,7 +27,7 @@ public class PointClickMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!DialogHandler.IsAnyDialogOpen() && Input.GetMouseButtonDown(0))
         {
             Ray ray = localCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitPoint;
