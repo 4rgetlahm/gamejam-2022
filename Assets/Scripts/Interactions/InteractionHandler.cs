@@ -36,12 +36,22 @@ public class InteractionHandler : MonoBehaviour
                 InteractableObject interactableObject = interactables.Where(i => i.gameObject.Equals(hitPoint.transform.gameObject)).FirstOrDefault();
                 if (interactableObject == null)
                     return;
-                if (IsNear(interactableObject))
+                }
+                GameObject.FindGameObjectWithTag("DialogHandler").GetComponent<DialogHandler>().OpenDialog("Toss a coin to determine the result of your action?", OnGoodClick, delegate { });
+               
+                if (IsNear(interactableObject)){
                     GameObject.Destroy(interactableObject.gameObject);
+                }
             }
         }
     }
 
+
+    public void OnGoodClick()
+    {
+        Debug.Log(":)))))))");
+        //GameObject.Destroy(interactableObject.gameObject);
+    }
     private bool IsNear(InteractableObject intObj)
     {
         return Vector3.Distance(Player.GetPosition(), intObj.gameObject.transform.position) <= MinimumDistance;
