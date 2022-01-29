@@ -1,438 +1,1286 @@
 fileFormatVersion: 2
 guid: e53c0edb812c5344698949e4671d1a2c
-timeCreated: 1528329745
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: axe
-    100002: body
-    100004: breast.L
-    100006: breast.L_end
-    100008: breast.R
-    100010: breast.R_end
-    100012: brow.B.L
-    100014: brow.B.L.001
-    100016: brow.B.L.002
-    100018: brow.B.L.003
-    100020: brow.B.L.003_end
-    100022: brow.B.R
-    100024: brow.B.R.001
-    100026: brow.B.R.002
-    100028: brow.B.R.003
-    100030: brow.B.R.003_end
-    100032: brow.T.L
-    100034: brow.T.L.001
-    100036: brow.T.L.002
-    100038: brow.T.L.003
-    100040: brow.T.L.003_end
-    100042: brow.T.R
-    100044: brow.T.R.001
-    100046: brow.T.R.002
-    100048: brow.T.R.003
-    100050: brow.T.R.003_end
-    100052: cheek.B.L
-    100054: cheek.B.L.001
-    100056: cheek.B.R
-    100058: cheek.B.R.001
-    100060: cheek.T.L
-    100062: cheek.T.L.001
-    100064: cheek.T.R
-    100066: cheek.T.R.001
-    100068: chin
-    100070: chin.001
-    100072: chin.001_end
-    100074: chin.L
-    100076: chin.R
-    100078: ear.L
-    100080: ear.L.001
-    100082: ear.L.002
-    100084: ear.L.003
-    100086: ear.L.004
-    100088: ear.L.004_end
-    100090: ear.R
-    100092: ear.R.001
-    100094: ear.R.002
-    100096: ear.R.003
-    100098: ear.R.004
-    100100: ear.R.004_end
-    100102: eye.L
-    100104: eye.L_end
-    100106: eye.R
-    100108: eye.R_end
-    100110: f_index.01.L
-    100112: f_index.01.R
-    100114: f_index.02.L
-    100116: f_index.02.R
-    100118: f_index.03.L
-    100120: f_index.03.L_end
-    100122: f_index.03.R
-    100124: f_index.03.R_end
-    100126: f_middle.01.L
-    100128: f_middle.01.R
-    100130: f_middle.02.L
-    100132: f_middle.02.R
-    100134: f_middle.03.L
-    100136: f_middle.03.L_end
-    100138: f_middle.03.R
-    100140: f_middle.03.R_end
-    100142: f_pinky.01.L
-    100144: f_pinky.01.R
-    100146: f_pinky.02.L
-    100148: f_pinky.02.R
-    100150: f_pinky.03.L
-    100152: f_pinky.03.L_end
-    100154: f_pinky.03.R
-    100156: f_pinky.03.R_end
-    100158: f_ring.01.L
-    100160: f_ring.01.R
-    100162: f_ring.02.L
-    100164: f_ring.02.R
-    100166: f_ring.03.L
-    100168: f_ring.03.L_end
-    100170: f_ring.03.R
-    100172: f_ring.03.R_end
-    100174: face
-    100176: foot.L
-    100178: foot.R
-    100180: forearm.L
-    100182: forearm.R
-    100184: forehead.L
-    100186: forehead.L.001
-    100188: forehead.L.002
-    100190: forehead.R
-    100192: forehead.R.001
-    100194: forehead.R.002
-    100196: hand.L
-    100198: hand.R
-    100200: heel.02.L
-    100202: heel.02.L_end
-    100204: heel.02.R
-    100206: heel.02.R_end
-    100208: //RootNode
-    100210: human warrior
-    100212: jaw
-    100214: jaw.L
-    100216: jaw.L.001
-    100218: jaw.R
-    100220: jaw.R.001
-    100222: lid.B.L
-    100224: lid.B.L.001
-    100226: lid.B.L.002
-    100228: lid.B.L.003
-    100230: lid.B.L.003_end
-    100232: lid.B.R
-    100234: lid.B.R.001
-    100236: lid.B.R.002
-    100238: lid.B.R.003
-    100240: lid.B.R.003_end
-    100242: lid.T.L
-    100244: lid.T.L.001
-    100246: lid.T.L.002
-    100248: lid.T.L.003
-    100250: lid.T.R
-    100252: lid.T.R.001
-    100254: lid.T.R.002
-    100256: lid.T.R.003
-    100258: lip.B.L
-    100260: lip.B.L.001
-    100262: lip.B.L.001_end
-    100264: lip.B.R
-    100266: lip.B.R.001
-    100268: lip.B.R.001_end
-    100270: lip.T.L
-    100272: lip.T.L.001
-    100274: lip.T.L.001_end
-    100276: lip.T.R
-    100278: lip.T.R.001
-    100280: lip.T.R.001_end
-    100282: nose
-    100284: nose.001
-    100286: nose.002
-    100288: nose.003
-    100290: nose.004
-    100292: nose.004_end
-    100294: nose.L
-    100296: nose.L.001
-    100298: nose.L.001_end
-    100300: nose.R
-    100302: nose.R.001
-    100304: nose.R.001_end
-    100306: palm.01.L
-    100308: palm.01.R
-    100310: palm.02.L
-    100312: palm.02.R
-    100314: palm.03.L
-    100316: palm.03.R
-    100318: palm.04.L
-    100320: palm.04.R
-    100322: pelvis.L
-    100324: pelvis.L_end
-    100326: pelvis.R
-    100328: pelvis.R_end
-    100330: shin.L
-    100332: shin.R
-    100334: shoulder.L
-    100336: shoulder.R
-    100338: spine
-    100340: spine.001
-    100342: spine.002
-    100344: spine.003
-    100346: spine.004
-    100348: spine.005
-    100350: spine.006
-    100352: teeth.B
-    100354: teeth.B_end
-    100356: teeth.T
-    100358: teeth.T_end
-    100360: temple.L
-    100362: temple.R
-    100364: thigh.L
-    100366: thigh.R
-    100368: thumb.01.L
-    100370: thumb.01.R
-    100372: thumb.02.L
-    100374: thumb.02.R
-    100376: thumb.03.L
-    100378: thumb.03.L_end
-    100380: thumb.03.R
-    100382: thumb.03.R_end
-    100384: toe.L
-    100386: toe.L_end
-    100388: toe.R
-    100390: toe.R_end
-    100392: tongue
-    100394: tongue.001
-    100396: tongue.002
-    100398: tongue.002_end
-    100400: upper_arm.L
-    100402: upper_arm.R
-    400000: axe
-    400002: body
-    400004: breast.L
-    400006: breast.L_end
-    400008: breast.R
-    400010: breast.R_end
-    400012: brow.B.L
-    400014: brow.B.L.001
-    400016: brow.B.L.002
-    400018: brow.B.L.003
-    400020: brow.B.L.003_end
-    400022: brow.B.R
-    400024: brow.B.R.001
-    400026: brow.B.R.002
-    400028: brow.B.R.003
-    400030: brow.B.R.003_end
-    400032: brow.T.L
-    400034: brow.T.L.001
-    400036: brow.T.L.002
-    400038: brow.T.L.003
-    400040: brow.T.L.003_end
-    400042: brow.T.R
-    400044: brow.T.R.001
-    400046: brow.T.R.002
-    400048: brow.T.R.003
-    400050: brow.T.R.003_end
-    400052: cheek.B.L
-    400054: cheek.B.L.001
-    400056: cheek.B.R
-    400058: cheek.B.R.001
-    400060: cheek.T.L
-    400062: cheek.T.L.001
-    400064: cheek.T.R
-    400066: cheek.T.R.001
-    400068: chin
-    400070: chin.001
-    400072: chin.001_end
-    400074: chin.L
-    400076: chin.R
-    400078: ear.L
-    400080: ear.L.001
-    400082: ear.L.002
-    400084: ear.L.003
-    400086: ear.L.004
-    400088: ear.L.004_end
-    400090: ear.R
-    400092: ear.R.001
-    400094: ear.R.002
-    400096: ear.R.003
-    400098: ear.R.004
-    400100: ear.R.004_end
-    400102: eye.L
-    400104: eye.L_end
-    400106: eye.R
-    400108: eye.R_end
-    400110: f_index.01.L
-    400112: f_index.01.R
-    400114: f_index.02.L
-    400116: f_index.02.R
-    400118: f_index.03.L
-    400120: f_index.03.L_end
-    400122: f_index.03.R
-    400124: f_index.03.R_end
-    400126: f_middle.01.L
-    400128: f_middle.01.R
-    400130: f_middle.02.L
-    400132: f_middle.02.R
-    400134: f_middle.03.L
-    400136: f_middle.03.L_end
-    400138: f_middle.03.R
-    400140: f_middle.03.R_end
-    400142: f_pinky.01.L
-    400144: f_pinky.01.R
-    400146: f_pinky.02.L
-    400148: f_pinky.02.R
-    400150: f_pinky.03.L
-    400152: f_pinky.03.L_end
-    400154: f_pinky.03.R
-    400156: f_pinky.03.R_end
-    400158: f_ring.01.L
-    400160: f_ring.01.R
-    400162: f_ring.02.L
-    400164: f_ring.02.R
-    400166: f_ring.03.L
-    400168: f_ring.03.L_end
-    400170: f_ring.03.R
-    400172: f_ring.03.R_end
-    400174: face
-    400176: foot.L
-    400178: foot.R
-    400180: forearm.L
-    400182: forearm.R
-    400184: forehead.L
-    400186: forehead.L.001
-    400188: forehead.L.002
-    400190: forehead.R
-    400192: forehead.R.001
-    400194: forehead.R.002
-    400196: hand.L
-    400198: hand.R
-    400200: heel.02.L
-    400202: heel.02.L_end
-    400204: heel.02.R
-    400206: heel.02.R_end
-    400208: //RootNode
-    400210: human warrior
-    400212: jaw
-    400214: jaw.L
-    400216: jaw.L.001
-    400218: jaw.R
-    400220: jaw.R.001
-    400222: lid.B.L
-    400224: lid.B.L.001
-    400226: lid.B.L.002
-    400228: lid.B.L.003
-    400230: lid.B.L.003_end
-    400232: lid.B.R
-    400234: lid.B.R.001
-    400236: lid.B.R.002
-    400238: lid.B.R.003
-    400240: lid.B.R.003_end
-    400242: lid.T.L
-    400244: lid.T.L.001
-    400246: lid.T.L.002
-    400248: lid.T.L.003
-    400250: lid.T.R
-    400252: lid.T.R.001
-    400254: lid.T.R.002
-    400256: lid.T.R.003
-    400258: lip.B.L
-    400260: lip.B.L.001
-    400262: lip.B.L.001_end
-    400264: lip.B.R
-    400266: lip.B.R.001
-    400268: lip.B.R.001_end
-    400270: lip.T.L
-    400272: lip.T.L.001
-    400274: lip.T.L.001_end
-    400276: lip.T.R
-    400278: lip.T.R.001
-    400280: lip.T.R.001_end
-    400282: nose
-    400284: nose.001
-    400286: nose.002
-    400288: nose.003
-    400290: nose.004
-    400292: nose.004_end
-    400294: nose.L
-    400296: nose.L.001
-    400298: nose.L.001_end
-    400300: nose.R
-    400302: nose.R.001
-    400304: nose.R.001_end
-    400306: palm.01.L
-    400308: palm.01.R
-    400310: palm.02.L
-    400312: palm.02.R
-    400314: palm.03.L
-    400316: palm.03.R
-    400318: palm.04.L
-    400320: palm.04.R
-    400322: pelvis.L
-    400324: pelvis.L_end
-    400326: pelvis.R
-    400328: pelvis.R_end
-    400330: shin.L
-    400332: shin.R
-    400334: shoulder.L
-    400336: shoulder.R
-    400338: spine
-    400340: spine.001
-    400342: spine.002
-    400344: spine.003
-    400346: spine.004
-    400348: spine.005
-    400350: spine.006
-    400352: teeth.B
-    400354: teeth.B_end
-    400356: teeth.T
-    400358: teeth.T_end
-    400360: temple.L
-    400362: temple.R
-    400364: thigh.L
-    400366: thigh.R
-    400368: thumb.01.L
-    400370: thumb.01.R
-    400372: thumb.02.L
-    400374: thumb.02.R
-    400376: thumb.03.L
-    400378: thumb.03.L_end
-    400380: thumb.03.R
-    400382: thumb.03.R_end
-    400384: toe.L
-    400386: toe.L_end
-    400388: toe.R
-    400390: toe.R_end
-    400392: tongue
-    400394: tongue.001
-    400396: tongue.002
-    400398: tongue.002_end
-    400400: upper_arm.L
-    400402: upper_arm.R
-    2100000: metal
-    2100002: belt
-    2100004: shulders
-    2100006: skin
-    2100008: boots
-    2100010: legs
-    2100012: hair
-    2100014: belt 2
-    2100016: metal 2
-    2100018: bracer
-    2100020: 1
-    2100022: 3
-    2100024: 2
-    2300000: axe
-    3300000: axe
-    4300000: body
-    4300002: axe
-    7400000: low poly warrior pose 1
-    7400002: low poly warrior pose 2
-    9500000: //RootNode
-    13700000: body
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: axe
+  - first:
+      1: 100002
+    second: body
+  - first:
+      1: 100004
+    second: breast.L
+  - first:
+      1: 100006
+    second: breast.L_end
+  - first:
+      1: 100008
+    second: breast.R
+  - first:
+      1: 100010
+    second: breast.R_end
+  - first:
+      1: 100012
+    second: brow.B.L
+  - first:
+      1: 100014
+    second: brow.B.L.001
+  - first:
+      1: 100016
+    second: brow.B.L.002
+  - first:
+      1: 100018
+    second: brow.B.L.003
+  - first:
+      1: 100020
+    second: brow.B.L.003_end
+  - first:
+      1: 100022
+    second: brow.B.R
+  - first:
+      1: 100024
+    second: brow.B.R.001
+  - first:
+      1: 100026
+    second: brow.B.R.002
+  - first:
+      1: 100028
+    second: brow.B.R.003
+  - first:
+      1: 100030
+    second: brow.B.R.003_end
+  - first:
+      1: 100032
+    second: brow.T.L
+  - first:
+      1: 100034
+    second: brow.T.L.001
+  - first:
+      1: 100036
+    second: brow.T.L.002
+  - first:
+      1: 100038
+    second: brow.T.L.003
+  - first:
+      1: 100040
+    second: brow.T.L.003_end
+  - first:
+      1: 100042
+    second: brow.T.R
+  - first:
+      1: 100044
+    second: brow.T.R.001
+  - first:
+      1: 100046
+    second: brow.T.R.002
+  - first:
+      1: 100048
+    second: brow.T.R.003
+  - first:
+      1: 100050
+    second: brow.T.R.003_end
+  - first:
+      1: 100052
+    second: cheek.B.L
+  - first:
+      1: 100054
+    second: cheek.B.L.001
+  - first:
+      1: 100056
+    second: cheek.B.R
+  - first:
+      1: 100058
+    second: cheek.B.R.001
+  - first:
+      1: 100060
+    second: cheek.T.L
+  - first:
+      1: 100062
+    second: cheek.T.L.001
+  - first:
+      1: 100064
+    second: cheek.T.R
+  - first:
+      1: 100066
+    second: cheek.T.R.001
+  - first:
+      1: 100068
+    second: chin
+  - first:
+      1: 100070
+    second: chin.001
+  - first:
+      1: 100072
+    second: chin.001_end
+  - first:
+      1: 100074
+    second: chin.L
+  - first:
+      1: 100076
+    second: chin.R
+  - first:
+      1: 100078
+    second: ear.L
+  - first:
+      1: 100080
+    second: ear.L.001
+  - first:
+      1: 100082
+    second: ear.L.002
+  - first:
+      1: 100084
+    second: ear.L.003
+  - first:
+      1: 100086
+    second: ear.L.004
+  - first:
+      1: 100088
+    second: ear.L.004_end
+  - first:
+      1: 100090
+    second: ear.R
+  - first:
+      1: 100092
+    second: ear.R.001
+  - first:
+      1: 100094
+    second: ear.R.002
+  - first:
+      1: 100096
+    second: ear.R.003
+  - first:
+      1: 100098
+    second: ear.R.004
+  - first:
+      1: 100100
+    second: ear.R.004_end
+  - first:
+      1: 100102
+    second: eye.L
+  - first:
+      1: 100104
+    second: eye.L_end
+  - first:
+      1: 100106
+    second: eye.R
+  - first:
+      1: 100108
+    second: eye.R_end
+  - first:
+      1: 100110
+    second: f_index.01.L
+  - first:
+      1: 100112
+    second: f_index.01.R
+  - first:
+      1: 100114
+    second: f_index.02.L
+  - first:
+      1: 100116
+    second: f_index.02.R
+  - first:
+      1: 100118
+    second: f_index.03.L
+  - first:
+      1: 100120
+    second: f_index.03.L_end
+  - first:
+      1: 100122
+    second: f_index.03.R
+  - first:
+      1: 100124
+    second: f_index.03.R_end
+  - first:
+      1: 100126
+    second: f_middle.01.L
+  - first:
+      1: 100128
+    second: f_middle.01.R
+  - first:
+      1: 100130
+    second: f_middle.02.L
+  - first:
+      1: 100132
+    second: f_middle.02.R
+  - first:
+      1: 100134
+    second: f_middle.03.L
+  - first:
+      1: 100136
+    second: f_middle.03.L_end
+  - first:
+      1: 100138
+    second: f_middle.03.R
+  - first:
+      1: 100140
+    second: f_middle.03.R_end
+  - first:
+      1: 100142
+    second: f_pinky.01.L
+  - first:
+      1: 100144
+    second: f_pinky.01.R
+  - first:
+      1: 100146
+    second: f_pinky.02.L
+  - first:
+      1: 100148
+    second: f_pinky.02.R
+  - first:
+      1: 100150
+    second: f_pinky.03.L
+  - first:
+      1: 100152
+    second: f_pinky.03.L_end
+  - first:
+      1: 100154
+    second: f_pinky.03.R
+  - first:
+      1: 100156
+    second: f_pinky.03.R_end
+  - first:
+      1: 100158
+    second: f_ring.01.L
+  - first:
+      1: 100160
+    second: f_ring.01.R
+  - first:
+      1: 100162
+    second: f_ring.02.L
+  - first:
+      1: 100164
+    second: f_ring.02.R
+  - first:
+      1: 100166
+    second: f_ring.03.L
+  - first:
+      1: 100168
+    second: f_ring.03.L_end
+  - first:
+      1: 100170
+    second: f_ring.03.R
+  - first:
+      1: 100172
+    second: f_ring.03.R_end
+  - first:
+      1: 100174
+    second: face
+  - first:
+      1: 100176
+    second: foot.L
+  - first:
+      1: 100178
+    second: foot.R
+  - first:
+      1: 100180
+    second: forearm.L
+  - first:
+      1: 100182
+    second: forearm.R
+  - first:
+      1: 100184
+    second: forehead.L
+  - first:
+      1: 100186
+    second: forehead.L.001
+  - first:
+      1: 100188
+    second: forehead.L.002
+  - first:
+      1: 100190
+    second: forehead.R
+  - first:
+      1: 100192
+    second: forehead.R.001
+  - first:
+      1: 100194
+    second: forehead.R.002
+  - first:
+      1: 100196
+    second: hand.L
+  - first:
+      1: 100198
+    second: hand.R
+  - first:
+      1: 100200
+    second: heel.02.L
+  - first:
+      1: 100202
+    second: heel.02.L_end
+  - first:
+      1: 100204
+    second: heel.02.R
+  - first:
+      1: 100206
+    second: heel.02.R_end
+  - first:
+      1: 100208
+    second: //RootNode
+  - first:
+      1: 100210
+    second: human warrior
+  - first:
+      1: 100212
+    second: jaw
+  - first:
+      1: 100214
+    second: jaw.L
+  - first:
+      1: 100216
+    second: jaw.L.001
+  - first:
+      1: 100218
+    second: jaw.R
+  - first:
+      1: 100220
+    second: jaw.R.001
+  - first:
+      1: 100222
+    second: lid.B.L
+  - first:
+      1: 100224
+    second: lid.B.L.001
+  - first:
+      1: 100226
+    second: lid.B.L.002
+  - first:
+      1: 100228
+    second: lid.B.L.003
+  - first:
+      1: 100230
+    second: lid.B.L.003_end
+  - first:
+      1: 100232
+    second: lid.B.R
+  - first:
+      1: 100234
+    second: lid.B.R.001
+  - first:
+      1: 100236
+    second: lid.B.R.002
+  - first:
+      1: 100238
+    second: lid.B.R.003
+  - first:
+      1: 100240
+    second: lid.B.R.003_end
+  - first:
+      1: 100242
+    second: lid.T.L
+  - first:
+      1: 100244
+    second: lid.T.L.001
+  - first:
+      1: 100246
+    second: lid.T.L.002
+  - first:
+      1: 100248
+    second: lid.T.L.003
+  - first:
+      1: 100250
+    second: lid.T.R
+  - first:
+      1: 100252
+    second: lid.T.R.001
+  - first:
+      1: 100254
+    second: lid.T.R.002
+  - first:
+      1: 100256
+    second: lid.T.R.003
+  - first:
+      1: 100258
+    second: lip.B.L
+  - first:
+      1: 100260
+    second: lip.B.L.001
+  - first:
+      1: 100262
+    second: lip.B.L.001_end
+  - first:
+      1: 100264
+    second: lip.B.R
+  - first:
+      1: 100266
+    second: lip.B.R.001
+  - first:
+      1: 100268
+    second: lip.B.R.001_end
+  - first:
+      1: 100270
+    second: lip.T.L
+  - first:
+      1: 100272
+    second: lip.T.L.001
+  - first:
+      1: 100274
+    second: lip.T.L.001_end
+  - first:
+      1: 100276
+    second: lip.T.R
+  - first:
+      1: 100278
+    second: lip.T.R.001
+  - first:
+      1: 100280
+    second: lip.T.R.001_end
+  - first:
+      1: 100282
+    second: nose
+  - first:
+      1: 100284
+    second: nose.001
+  - first:
+      1: 100286
+    second: nose.002
+  - first:
+      1: 100288
+    second: nose.003
+  - first:
+      1: 100290
+    second: nose.004
+  - first:
+      1: 100292
+    second: nose.004_end
+  - first:
+      1: 100294
+    second: nose.L
+  - first:
+      1: 100296
+    second: nose.L.001
+  - first:
+      1: 100298
+    second: nose.L.001_end
+  - first:
+      1: 100300
+    second: nose.R
+  - first:
+      1: 100302
+    second: nose.R.001
+  - first:
+      1: 100304
+    second: nose.R.001_end
+  - first:
+      1: 100306
+    second: palm.01.L
+  - first:
+      1: 100308
+    second: palm.01.R
+  - first:
+      1: 100310
+    second: palm.02.L
+  - first:
+      1: 100312
+    second: palm.02.R
+  - first:
+      1: 100314
+    second: palm.03.L
+  - first:
+      1: 100316
+    second: palm.03.R
+  - first:
+      1: 100318
+    second: palm.04.L
+  - first:
+      1: 100320
+    second: palm.04.R
+  - first:
+      1: 100322
+    second: pelvis.L
+  - first:
+      1: 100324
+    second: pelvis.L_end
+  - first:
+      1: 100326
+    second: pelvis.R
+  - first:
+      1: 100328
+    second: pelvis.R_end
+  - first:
+      1: 100330
+    second: shin.L
+  - first:
+      1: 100332
+    second: shin.R
+  - first:
+      1: 100334
+    second: shoulder.L
+  - first:
+      1: 100336
+    second: shoulder.R
+  - first:
+      1: 100338
+    second: spine
+  - first:
+      1: 100340
+    second: spine.001
+  - first:
+      1: 100342
+    second: spine.002
+  - first:
+      1: 100344
+    second: spine.003
+  - first:
+      1: 100346
+    second: spine.004
+  - first:
+      1: 100348
+    second: spine.005
+  - first:
+      1: 100350
+    second: spine.006
+  - first:
+      1: 100352
+    second: teeth.B
+  - first:
+      1: 100354
+    second: teeth.B_end
+  - first:
+      1: 100356
+    second: teeth.T
+  - first:
+      1: 100358
+    second: teeth.T_end
+  - first:
+      1: 100360
+    second: temple.L
+  - first:
+      1: 100362
+    second: temple.R
+  - first:
+      1: 100364
+    second: thigh.L
+  - first:
+      1: 100366
+    second: thigh.R
+  - first:
+      1: 100368
+    second: thumb.01.L
+  - first:
+      1: 100370
+    second: thumb.01.R
+  - first:
+      1: 100372
+    second: thumb.02.L
+  - first:
+      1: 100374
+    second: thumb.02.R
+  - first:
+      1: 100376
+    second: thumb.03.L
+  - first:
+      1: 100378
+    second: thumb.03.L_end
+  - first:
+      1: 100380
+    second: thumb.03.R
+  - first:
+      1: 100382
+    second: thumb.03.R_end
+  - first:
+      1: 100384
+    second: toe.L
+  - first:
+      1: 100386
+    second: toe.L_end
+  - first:
+      1: 100388
+    second: toe.R
+  - first:
+      1: 100390
+    second: toe.R_end
+  - first:
+      1: 100392
+    second: tongue
+  - first:
+      1: 100394
+    second: tongue.001
+  - first:
+      1: 100396
+    second: tongue.002
+  - first:
+      1: 100398
+    second: tongue.002_end
+  - first:
+      1: 100400
+    second: upper_arm.L
+  - first:
+      1: 100402
+    second: upper_arm.R
+  - first:
+      4: 400000
+    second: axe
+  - first:
+      4: 400002
+    second: body
+  - first:
+      4: 400004
+    second: breast.L
+  - first:
+      4: 400006
+    second: breast.L_end
+  - first:
+      4: 400008
+    second: breast.R
+  - first:
+      4: 400010
+    second: breast.R_end
+  - first:
+      4: 400012
+    second: brow.B.L
+  - first:
+      4: 400014
+    second: brow.B.L.001
+  - first:
+      4: 400016
+    second: brow.B.L.002
+  - first:
+      4: 400018
+    second: brow.B.L.003
+  - first:
+      4: 400020
+    second: brow.B.L.003_end
+  - first:
+      4: 400022
+    second: brow.B.R
+  - first:
+      4: 400024
+    second: brow.B.R.001
+  - first:
+      4: 400026
+    second: brow.B.R.002
+  - first:
+      4: 400028
+    second: brow.B.R.003
+  - first:
+      4: 400030
+    second: brow.B.R.003_end
+  - first:
+      4: 400032
+    second: brow.T.L
+  - first:
+      4: 400034
+    second: brow.T.L.001
+  - first:
+      4: 400036
+    second: brow.T.L.002
+  - first:
+      4: 400038
+    second: brow.T.L.003
+  - first:
+      4: 400040
+    second: brow.T.L.003_end
+  - first:
+      4: 400042
+    second: brow.T.R
+  - first:
+      4: 400044
+    second: brow.T.R.001
+  - first:
+      4: 400046
+    second: brow.T.R.002
+  - first:
+      4: 400048
+    second: brow.T.R.003
+  - first:
+      4: 400050
+    second: brow.T.R.003_end
+  - first:
+      4: 400052
+    second: cheek.B.L
+  - first:
+      4: 400054
+    second: cheek.B.L.001
+  - first:
+      4: 400056
+    second: cheek.B.R
+  - first:
+      4: 400058
+    second: cheek.B.R.001
+  - first:
+      4: 400060
+    second: cheek.T.L
+  - first:
+      4: 400062
+    second: cheek.T.L.001
+  - first:
+      4: 400064
+    second: cheek.T.R
+  - first:
+      4: 400066
+    second: cheek.T.R.001
+  - first:
+      4: 400068
+    second: chin
+  - first:
+      4: 400070
+    second: chin.001
+  - first:
+      4: 400072
+    second: chin.001_end
+  - first:
+      4: 400074
+    second: chin.L
+  - first:
+      4: 400076
+    second: chin.R
+  - first:
+      4: 400078
+    second: ear.L
+  - first:
+      4: 400080
+    second: ear.L.001
+  - first:
+      4: 400082
+    second: ear.L.002
+  - first:
+      4: 400084
+    second: ear.L.003
+  - first:
+      4: 400086
+    second: ear.L.004
+  - first:
+      4: 400088
+    second: ear.L.004_end
+  - first:
+      4: 400090
+    second: ear.R
+  - first:
+      4: 400092
+    second: ear.R.001
+  - first:
+      4: 400094
+    second: ear.R.002
+  - first:
+      4: 400096
+    second: ear.R.003
+  - first:
+      4: 400098
+    second: ear.R.004
+  - first:
+      4: 400100
+    second: ear.R.004_end
+  - first:
+      4: 400102
+    second: eye.L
+  - first:
+      4: 400104
+    second: eye.L_end
+  - first:
+      4: 400106
+    second: eye.R
+  - first:
+      4: 400108
+    second: eye.R_end
+  - first:
+      4: 400110
+    second: f_index.01.L
+  - first:
+      4: 400112
+    second: f_index.01.R
+  - first:
+      4: 400114
+    second: f_index.02.L
+  - first:
+      4: 400116
+    second: f_index.02.R
+  - first:
+      4: 400118
+    second: f_index.03.L
+  - first:
+      4: 400120
+    second: f_index.03.L_end
+  - first:
+      4: 400122
+    second: f_index.03.R
+  - first:
+      4: 400124
+    second: f_index.03.R_end
+  - first:
+      4: 400126
+    second: f_middle.01.L
+  - first:
+      4: 400128
+    second: f_middle.01.R
+  - first:
+      4: 400130
+    second: f_middle.02.L
+  - first:
+      4: 400132
+    second: f_middle.02.R
+  - first:
+      4: 400134
+    second: f_middle.03.L
+  - first:
+      4: 400136
+    second: f_middle.03.L_end
+  - first:
+      4: 400138
+    second: f_middle.03.R
+  - first:
+      4: 400140
+    second: f_middle.03.R_end
+  - first:
+      4: 400142
+    second: f_pinky.01.L
+  - first:
+      4: 400144
+    second: f_pinky.01.R
+  - first:
+      4: 400146
+    second: f_pinky.02.L
+  - first:
+      4: 400148
+    second: f_pinky.02.R
+  - first:
+      4: 400150
+    second: f_pinky.03.L
+  - first:
+      4: 400152
+    second: f_pinky.03.L_end
+  - first:
+      4: 400154
+    second: f_pinky.03.R
+  - first:
+      4: 400156
+    second: f_pinky.03.R_end
+  - first:
+      4: 400158
+    second: f_ring.01.L
+  - first:
+      4: 400160
+    second: f_ring.01.R
+  - first:
+      4: 400162
+    second: f_ring.02.L
+  - first:
+      4: 400164
+    second: f_ring.02.R
+  - first:
+      4: 400166
+    second: f_ring.03.L
+  - first:
+      4: 400168
+    second: f_ring.03.L_end
+  - first:
+      4: 400170
+    second: f_ring.03.R
+  - first:
+      4: 400172
+    second: f_ring.03.R_end
+  - first:
+      4: 400174
+    second: face
+  - first:
+      4: 400176
+    second: foot.L
+  - first:
+      4: 400178
+    second: foot.R
+  - first:
+      4: 400180
+    second: forearm.L
+  - first:
+      4: 400182
+    second: forearm.R
+  - first:
+      4: 400184
+    second: forehead.L
+  - first:
+      4: 400186
+    second: forehead.L.001
+  - first:
+      4: 400188
+    second: forehead.L.002
+  - first:
+      4: 400190
+    second: forehead.R
+  - first:
+      4: 400192
+    second: forehead.R.001
+  - first:
+      4: 400194
+    second: forehead.R.002
+  - first:
+      4: 400196
+    second: hand.L
+  - first:
+      4: 400198
+    second: hand.R
+  - first:
+      4: 400200
+    second: heel.02.L
+  - first:
+      4: 400202
+    second: heel.02.L_end
+  - first:
+      4: 400204
+    second: heel.02.R
+  - first:
+      4: 400206
+    second: heel.02.R_end
+  - first:
+      4: 400208
+    second: //RootNode
+  - first:
+      4: 400210
+    second: human warrior
+  - first:
+      4: 400212
+    second: jaw
+  - first:
+      4: 400214
+    second: jaw.L
+  - first:
+      4: 400216
+    second: jaw.L.001
+  - first:
+      4: 400218
+    second: jaw.R
+  - first:
+      4: 400220
+    second: jaw.R.001
+  - first:
+      4: 400222
+    second: lid.B.L
+  - first:
+      4: 400224
+    second: lid.B.L.001
+  - first:
+      4: 400226
+    second: lid.B.L.002
+  - first:
+      4: 400228
+    second: lid.B.L.003
+  - first:
+      4: 400230
+    second: lid.B.L.003_end
+  - first:
+      4: 400232
+    second: lid.B.R
+  - first:
+      4: 400234
+    second: lid.B.R.001
+  - first:
+      4: 400236
+    second: lid.B.R.002
+  - first:
+      4: 400238
+    second: lid.B.R.003
+  - first:
+      4: 400240
+    second: lid.B.R.003_end
+  - first:
+      4: 400242
+    second: lid.T.L
+  - first:
+      4: 400244
+    second: lid.T.L.001
+  - first:
+      4: 400246
+    second: lid.T.L.002
+  - first:
+      4: 400248
+    second: lid.T.L.003
+  - first:
+      4: 400250
+    second: lid.T.R
+  - first:
+      4: 400252
+    second: lid.T.R.001
+  - first:
+      4: 400254
+    second: lid.T.R.002
+  - first:
+      4: 400256
+    second: lid.T.R.003
+  - first:
+      4: 400258
+    second: lip.B.L
+  - first:
+      4: 400260
+    second: lip.B.L.001
+  - first:
+      4: 400262
+    second: lip.B.L.001_end
+  - first:
+      4: 400264
+    second: lip.B.R
+  - first:
+      4: 400266
+    second: lip.B.R.001
+  - first:
+      4: 400268
+    second: lip.B.R.001_end
+  - first:
+      4: 400270
+    second: lip.T.L
+  - first:
+      4: 400272
+    second: lip.T.L.001
+  - first:
+      4: 400274
+    second: lip.T.L.001_end
+  - first:
+      4: 400276
+    second: lip.T.R
+  - first:
+      4: 400278
+    second: lip.T.R.001
+  - first:
+      4: 400280
+    second: lip.T.R.001_end
+  - first:
+      4: 400282
+    second: nose
+  - first:
+      4: 400284
+    second: nose.001
+  - first:
+      4: 400286
+    second: nose.002
+  - first:
+      4: 400288
+    second: nose.003
+  - first:
+      4: 400290
+    second: nose.004
+  - first:
+      4: 400292
+    second: nose.004_end
+  - first:
+      4: 400294
+    second: nose.L
+  - first:
+      4: 400296
+    second: nose.L.001
+  - first:
+      4: 400298
+    second: nose.L.001_end
+  - first:
+      4: 400300
+    second: nose.R
+  - first:
+      4: 400302
+    second: nose.R.001
+  - first:
+      4: 400304
+    second: nose.R.001_end
+  - first:
+      4: 400306
+    second: palm.01.L
+  - first:
+      4: 400308
+    second: palm.01.R
+  - first:
+      4: 400310
+    second: palm.02.L
+  - first:
+      4: 400312
+    second: palm.02.R
+  - first:
+      4: 400314
+    second: palm.03.L
+  - first:
+      4: 400316
+    second: palm.03.R
+  - first:
+      4: 400318
+    second: palm.04.L
+  - first:
+      4: 400320
+    second: palm.04.R
+  - first:
+      4: 400322
+    second: pelvis.L
+  - first:
+      4: 400324
+    second: pelvis.L_end
+  - first:
+      4: 400326
+    second: pelvis.R
+  - first:
+      4: 400328
+    second: pelvis.R_end
+  - first:
+      4: 400330
+    second: shin.L
+  - first:
+      4: 400332
+    second: shin.R
+  - first:
+      4: 400334
+    second: shoulder.L
+  - first:
+      4: 400336
+    second: shoulder.R
+  - first:
+      4: 400338
+    second: spine
+  - first:
+      4: 400340
+    second: spine.001
+  - first:
+      4: 400342
+    second: spine.002
+  - first:
+      4: 400344
+    second: spine.003
+  - first:
+      4: 400346
+    second: spine.004
+  - first:
+      4: 400348
+    second: spine.005
+  - first:
+      4: 400350
+    second: spine.006
+  - first:
+      4: 400352
+    second: teeth.B
+  - first:
+      4: 400354
+    second: teeth.B_end
+  - first:
+      4: 400356
+    second: teeth.T
+  - first:
+      4: 400358
+    second: teeth.T_end
+  - first:
+      4: 400360
+    second: temple.L
+  - first:
+      4: 400362
+    second: temple.R
+  - first:
+      4: 400364
+    second: thigh.L
+  - first:
+      4: 400366
+    second: thigh.R
+  - first:
+      4: 400368
+    second: thumb.01.L
+  - first:
+      4: 400370
+    second: thumb.01.R
+  - first:
+      4: 400372
+    second: thumb.02.L
+  - first:
+      4: 400374
+    second: thumb.02.R
+  - first:
+      4: 400376
+    second: thumb.03.L
+  - first:
+      4: 400378
+    second: thumb.03.L_end
+  - first:
+      4: 400380
+    second: thumb.03.R
+  - first:
+      4: 400382
+    second: thumb.03.R_end
+  - first:
+      4: 400384
+    second: toe.L
+  - first:
+      4: 400386
+    second: toe.L_end
+  - first:
+      4: 400388
+    second: toe.R
+  - first:
+      4: 400390
+    second: toe.R_end
+  - first:
+      4: 400392
+    second: tongue
+  - first:
+      4: 400394
+    second: tongue.001
+  - first:
+      4: 400396
+    second: tongue.002
+  - first:
+      4: 400398
+    second: tongue.002_end
+  - first:
+      4: 400400
+    second: upper_arm.L
+  - first:
+      4: 400402
+    second: upper_arm.R
+  - first:
+      21: 2100000
+    second: metal
+  - first:
+      21: 2100002
+    second: belt
+  - first:
+      21: 2100004
+    second: shulders
+  - first:
+      21: 2100006
+    second: skin
+  - first:
+      21: 2100008
+    second: boots
+  - first:
+      21: 2100010
+    second: legs
+  - first:
+      21: 2100012
+    second: hair
+  - first:
+      21: 2100014
+    second: belt 2
+  - first:
+      21: 2100016
+    second: metal 2
+  - first:
+      21: 2100018
+    second: bracer
+  - first:
+      21: 2100020
+    second: 1
+  - first:
+      21: 2100022
+    second: 3
+  - first:
+      21: 2100024
+    second: 2
+  - first:
+      23: 2300000
+    second: axe
+  - first:
+      33: 3300000
+    second: axe
+  - first:
+      43: 4300000
+    second: body
+  - first:
+      43: 4300002
+    second: axe
+  - first:
+      74: 7400000
+    second: low poly warrior pose 1
+  - first:
+      74: 7400002
+    second: low poly warrior pose 2
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: body
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -449,6 +1297,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -460,6 +1309,7 @@ ModelImporter:
     - serializedVersion: 16
       name: low poly warrior pose 1
       takeName: human warrior|human warrior stand 1
+      internalID: 0
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -488,6 +1338,7 @@ ModelImporter:
     - serializedVersion: 16
       name: low poly warrior pose 2
       takeName: human warrior|human warrior stand 2
+      internalID: 0
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -519,21 +1370,31 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -541,427 +1402,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
-    human:
-    - boneName: spine
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thigh.L
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thigh.R
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: shin.L
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: shin.R
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: foot.L
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: foot.R
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: spine.001
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: spine.002
-      humanName: Chest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: spine.005
-      humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: spine.006
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: shoulder.L
-      humanName: LeftShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: shoulder.R
-      humanName: RightShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: upper_arm.L
-      humanName: LeftUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: upper_arm.R
-      humanName: RightUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: forearm.L
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: forearm.R
-      humanName: RightLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: hand.L
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: hand.R
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: toe.L
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: toe.R
-      humanName: RightToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: jaw.L.001
-      humanName: LeftEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: jaw.R.001
-      humanName: RightEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thumb.01.L
-      humanName: Left Thumb Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thumb.02.L
-      humanName: Left Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thumb.03.L
-      humanName: Left Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_index.01.L
-      humanName: Left Index Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_index.02.L
-      humanName: Left Index Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_index.03.L
-      humanName: Left Index Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_middle.01.L
-      humanName: Left Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_middle.02.L
-      humanName: Left Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_ring.01.L
-      humanName: Left Ring Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_ring.02.L
-      humanName: Left Ring Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_ring.03.L
-      humanName: Left Ring Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_pinky.01.L
-      humanName: Left Little Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_pinky.02.L
-      humanName: Left Little Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_pinky.03.L
-      humanName: Left Little Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thumb.01.R
-      humanName: Right Thumb Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thumb.02.R
-      humanName: Right Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: thumb.03.R
-      humanName: Right Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_index.01.R
-      humanName: Right Index Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_index.02.R
-      humanName: Right Index Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_index.03.R
-      humanName: Right Index Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_middle.01.R
-      humanName: Right Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_middle.02.R
-      humanName: Right Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_ring.01.R
-      humanName: Right Ring Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_ring.02.R
-      humanName: Right Ring Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_ring.03.R
-      humanName: Right Ring Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_pinky.01.R
-      humanName: Right Little Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_pinky.02.R
-      humanName: Right Little Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: f_pinky.03.R
-      humanName: Right Little Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: spine.003
-      humanName: UpperChest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
+    serializedVersion: 3
+    human: []
     skeleton:
     - name: human male(Clone)
       parentName: 
@@ -1980,14 +2428,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
