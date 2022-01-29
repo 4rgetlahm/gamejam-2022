@@ -10,13 +10,11 @@ public class DialogHandler : MonoBehaviour
 
     public void OpenDialog(string text, Action primaryAction, Action secondaryAction){
         if (GameObject.FindGameObjectWithTag("Dialog") == null) { 
-
             GameObject copiedDialog = GameObject.Instantiate(dialog, this.transform);
             copiedDialog.GetComponent<DialogData>().ChangeText(text);
             copiedDialog.GetComponent<DialogData>().ChangeActions(primaryAction, secondaryAction);
             
         }
-        
     }
 
 }
