@@ -6028,7 +6028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4028250183184810}
-  - component: {fileID: 95139111640682058}
+  - component: {fileID: 8164859713628145061}
   m_Layer: 0
   m_Name: Low Poly Warrior
   m_TagString: Untagged
@@ -6052,7 +6052,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95139111640682058
+--- !u!95 &8164859713628145061
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -6061,9 +6061,9 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948535115976630}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e53c0edb812c5344698949e4671d1a2c, type: 3}
-  m_Controller: {fileID: 9100000, guid: 47f29fac49912c84b964c579169fe933, type: 2}
-  m_CullingMode: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e2b5d928e49a7b4e9d1c9c8ced23af4, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -6156,13 +6156,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959361118132160}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.0016244719, z: 0}
+  m_LocalRotation: {x: 0.25039506, y: 0.000000029802322, z: -0.000000014901161, w: 0.96814376}
+  m_LocalPosition: {x: -0.000000039784936, y: 0.0016244097, z: -0.000000103376806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4650140049781176}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.002, y: 0, z: 0}
 --- !u!1 &1963219454325478
 GameObject:
   m_ObjectHideFlags: 0
