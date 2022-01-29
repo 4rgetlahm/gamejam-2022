@@ -22,7 +22,7 @@ public class PointClickMovement : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
         animator.speed = animationSpeed;
-        LastPosition = GetPlayerPosition();
+        LastPosition = Player.GetPosition();
     }
 
     void Update()
@@ -39,18 +39,12 @@ public class PointClickMovement : MonoBehaviour
                 animator.SetBool("IsWalking", true);
             }
         }
-        var newPosition = GetPlayerPosition();
+        var newPosition = Player.GetPosition();
         if (LastPosition == newPosition)
             animator.SetBool("IsWalking", false);
         else
             animator.SetBool("IsWalking", true);
 
         LastPosition = newPosition;
-    }
-
-    private Vector3 GetPlayerPosition()
-    {
-        var playerObject = GameObject.Find("Player");
-        return playerObject.transform.position;
     }
 }
