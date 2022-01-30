@@ -168,7 +168,7 @@
     },
     "com.unity.visualeffectgraph": {
       "version": "10.8.1",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.shadergraph": "10.8.1",

@@ -273,10 +273,6 @@ public class InteractionHandler : MonoBehaviour
         this.currentlyInterractingObject = null;
     }
 
-    public void OnGoodClick()
-    {
-        //GameObject.Destroy(interactableObject.gameObject);
-    }
     private bool IsNear(InteractableObject intObj, float minimumDistance)
     {
         return Vector3.Distance(Player.GetPosition(), intObj.gameObject.transform.position) <= MinimumDistance;
