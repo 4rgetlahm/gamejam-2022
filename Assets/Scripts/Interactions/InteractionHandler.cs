@@ -87,6 +87,7 @@ public class InteractionHandler : MonoBehaviour
         playerData.bones += generatedBones;
         playerData.Heal(5f);
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("You have slayed the creature and received " + generatedBones + " bones", 2f);
     }
 
@@ -100,6 +101,7 @@ public class InteractionHandler : MonoBehaviour
         int generatedWood = UnityEngine.Random.Range(5, 20);
         playerData.wood += generatedWood;
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("You have chopped the tree and got " + generatedWood + " wood", 2f);
     }
 
@@ -112,6 +114,7 @@ public class InteractionHandler : MonoBehaviour
         int generatedStone = UnityEngine.Random.Range(3, 7);
         playerData.stone += generatedStone;
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("You have mined the stone and got " + generatedStone + " stone", 2f);
     }
 

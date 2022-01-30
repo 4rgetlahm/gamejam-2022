@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Stone
   - AlertMaker
+  - Grass
+  - Snow
   layers:
   - Default
   - TransparentFX
