@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
-    private float health = 50f;
+    private float health = 100.0f;
     public float sucessRate = 50f;
     public int wood = 0;
     public int stone = 0;

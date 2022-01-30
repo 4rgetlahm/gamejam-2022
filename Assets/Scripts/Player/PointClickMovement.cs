@@ -28,11 +28,8 @@ public class PointClickMovement : MonoBehaviour
 
     private AudioSource Source;
 
-    List<GameObject> currentCollisions;
-
     void Start()
     {
-        currentCollisions = new List<GameObject>();
         Source = GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
         animator.speed = animationSpeed;
@@ -97,9 +94,11 @@ public class PointClickMovement : MonoBehaviour
 
     private void PlayerMovementSounds()
     {
-        if (currentCollisions.Select(p => p.tag).Any(p => p == "Grass"))
+        if(!TouchedGameObjects.GameObjects.Any())
+            return;
+        if (TouchedGameObjects.GameObjects.Select(p => p.tag).Any(p => p == "Grass"))
             PlaySound(SoundType.Grass);
-        else if (currentCollisions.Select(p => p.tag).Any(p => p == "Snow"))
+        else if (TouchedGameObjects.GameObjects.Select(p => p.tag).Any(p => p == "Snow"))
             PlaySound(SoundType.Snow);
         else
             PlaySound(SoundType.Sand);
@@ -107,11 +106,11 @@ public class PointClickMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        currentCollisions.Add(col.gameObject);
+        TouchedGameObjects.GameObjects.Add(col.gameObject);
     }
 
     void OnTriggerExit(Collider col)
     {
-        currentCollisions.Remove(col.gameObject);
+        TouchedGameObjects.GameObjects.Remove(col.gameObject);
     }
 }

@@ -4622,6 +4622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4670440514509144}
+  - component: {fileID: 7182402615752878964}
   m_Layer: 0
   m_Name: human warrior
   m_TagString: Untagged
@@ -4644,6 +4645,25 @@ Transform:
   m_Father: {fileID: 4028250183184810}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &7182402615752878964
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733834307721242}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59d6f11449c834848afd393e755219ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1734517904227864
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,9 @@ TagManager:
   - Tree
   - Dialog
   - DialogHandler
+  - Enemy
+  - Stone
+  - AlertMaker
   - Grass
   layers:
   - Default
