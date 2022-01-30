@@ -15,6 +15,7 @@ public class InteractionHandler : MonoBehaviour
     private Camera localCamera;
 
     public float MinimumDistance;
+    public float BossDistance;
 
     private PlayerData playerData;
 
@@ -60,8 +61,12 @@ public class InteractionHandler : MonoBehaviour
                 {
                     return;
                 }
-
-                if (IsNear(interactableObject))
+                if (interactableObject.interactionType == InteractionType.Boss && IsNear(interactableObject, BossDistance))
+                {
+                print(interactableObject.interactionType);
+                    dialogHandler.OpenDialog("Do you want to fight the sVilius? Your success rate is: " + playerData.sucessRate + "%", OnAcceptFightBoss, ResetInteraction);
+                }
+                if (IsNear(interactableObject, MinimumDistance))
                 {
                     currentlyInterractingObject = interactableObject;
                     switch (interactableObject.interactionType)
@@ -74,9 +79,6 @@ public class InteractionHandler : MonoBehaviour
                             break;
                         case InteractionType.Stone:
                             dialogHandler.OpenDialog("Do you want to mine the stones? Your success rate is: " + playerData.sucessRate + "%", OnAcceptMineStone, ResetInteraction);
-                            break;
-                        case InteractionType.Boss:
-                            dialogHandler.OpenDialog("Do you want to fight the sVilius? Your success rate is: " + playerData.sucessRate + "%", OnAcceptFightBoss, ResetInteraction);
                             break;
                         case InteractionType.WoodenChest:
                             dialogHandler.OpenDialog("Do you want to open this Wooden chest? Your success rate is: " + playerData.sucessRate + "%", OnAcceptWoodenChest, ResetInteraction);
@@ -254,15 +256,15 @@ public class InteractionHandler : MonoBehaviour
 
     public void OnAcceptFightBoss()
     {
-        if (coinTosser.TossCoin((int)playerData.sucessRate) == Outcome.Lose)
+        if (coinTosser.TossCoin((int)playerData.sucessRate - 100) == Outcome.Lose)
         {
-            playerData.Damage(5f);
+            playerData.Damage(50f);
             alertMaker.ShowAlert("You have failed to kill sVilius!", 2f);
             return;
         }
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
         TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
-        alertMaker.ShowAlert("You have killed sVilius!!!", 2f);
+        alertMaker.ShowAlert("Congratulations!!! You have killed sVilius!!!", 2f);
         StartCoroutine("PlayFightingAnimation");
     }
 
@@ -271,13 +273,11 @@ public class InteractionHandler : MonoBehaviour
         this.currentlyInterractingObject = null;
     }
 
-
     public void OnGoodClick()
     {
-
         //GameObject.Destroy(interactableObject.gameObject);
     }
-    private bool IsNear(InteractableObject intObj)
+    private bool IsNear(InteractableObject intObj, float minimumDistance)
     {
         return Vector3.Distance(Player.GetPosition(), intObj.gameObject.transform.position) <= MinimumDistance;
     }
