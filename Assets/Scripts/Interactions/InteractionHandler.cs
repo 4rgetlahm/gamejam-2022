@@ -9,7 +9,7 @@ public class InteractionHandler : MonoBehaviour
 {
 
     [SerializeField]
-    private List<InteractableObject> interactables;
+    private List<InteractableObject> interactables = new List<InteractableObject>();
 
     [SerializeField]
     private Camera localCamera;
@@ -53,10 +53,25 @@ public class InteractionHandler : MonoBehaviour
         {
             Ray ray = localCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitPoint;
+            Debug.LogError(5);
 
             if (Physics.Raycast(ray, out hitPoint))
             {
-                InteractableObject interactableObject = interactables.Where(i => i.gameObject.Equals(hitPoint.transform.gameObject)).FirstOrDefault();
+                if(hitPoint.transform == null || hitPoint.transform.gameObject == null){
+                    return;
+                }
+                InteractableObject interactableObject = null;
+                foreach(InteractableObject interactable in interactables){
+                    if(interactable.gameObject == null){
+                        continue;
+                    }
+                    Debug.LogError("I: " + interactable.gameObject);
+                    if(interactable.gameObject.Equals(hitPoint.transform.gameObject)){
+                        interactableObject = interactable;
+                        break;
+                    }
+                }
+                Debug.LogError(interactableObject);
                 if (interactableObject == null)
                 {
                     return;
