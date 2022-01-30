@@ -11,6 +11,7 @@ TagManager:
   - Stone
   - AlertMaker
   - Grass
+  - Snow
   layers:
   - Default
   - TransparentFX
