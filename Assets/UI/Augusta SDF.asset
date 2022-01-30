@@ -789,19 +789,6 @@ MonoBehaviour:
       m_Height: 58
     m_Scale: 1
     m_AtlasIndex: 0
-<<<<<<< HEAD
-  - m_Index: 61
-    m_Metrics:
-      m_Width: 50.484375
-      m_Height: 57.59375
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 57.59375
-      m_HorizontalAdvance: 50.765625
-    m_GlyphRect:
-      m_X: 447
-      m_Y: 219
-      m_Width: 51
-=======
   - m_Index: 46
     m_Metrics:
       m_Width: 57.0625
@@ -841,7 +828,6 @@ MonoBehaviour:
       m_X: 447
       m_Y: 219
       m_Width: 52
->>>>>>> main
       m_Height: 58
     m_Scale: 1
     m_AtlasIndex: 0
@@ -1047,10 +1033,6 @@ MonoBehaviour:
     m_GlyphIndex: 42
     m_Scale: 1
   - m_ElementType: 1
-<<<<<<< HEAD
-    m_Unicode: 86
-    m_GlyphIndex: 61
-=======
     m_Unicode: 71
     m_GlyphIndex: 46
     m_Scale: 1
@@ -1061,7 +1043,6 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 83
     m_GlyphIndex: 58
->>>>>>> main
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: -3114369151717398508}
@@ -1265,11 +1246,6 @@ MonoBehaviour:
     m_Y: 142
     m_Width: 68
     m_Height: 77
-<<<<<<< HEAD
-  - m_X: 437
-    m_Y: 209
-    m_Width: 70
-=======
   - m_X: 55
     m_Y: 286
     m_Width: 77
@@ -1281,7 +1257,6 @@ MonoBehaviour:
   - m_X: 437
     m_Y: 209
     m_Width: 71
->>>>>>> main
     m_Height: 77
   m_FreeGlyphRects:
   - m_X: 107
@@ -1416,8 +1391,6 @@ MonoBehaviour:
     m_Y: 214
     m_Width: 446
     m_Height: 809
-<<<<<<< HEAD
-=======
   - m_X: 0
     m_Y: 363
     m_Width: 1023
@@ -1442,7 +1415,6 @@ MonoBehaviour:
     m_Y: 0
     m_Width: 47
     m_Height: 1023
->>>>>>> main
   - m_X: 339
     m_Y: 286
     m_Width: 684
@@ -1455,15 +1427,6 @@ MonoBehaviour:
     m_Y: 154
     m_Width: 15
     m_Height: 55
-<<<<<<< HEAD
-  - m_X: 507
-    m_Y: 219
-    m_Width: 516
-    m_Height: 804
-  - m_X: 507
-    m_Y: 209
-    m_Width: 2
-=======
   - m_X: 508
     m_Y: 219
     m_Width: 515
@@ -1471,7 +1434,6 @@ MonoBehaviour:
   - m_X: 508
     m_Y: 209
     m_Width: 1
->>>>>>> main
     m_Height: 814
   m_fontInfo:
     Name: 
