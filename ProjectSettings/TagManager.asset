@@ -9,6 +9,7 @@ TagManager:
   - DialogHandler
   - Enemy
   - Stone
+  - AlertMaker
   layers:
   - Default
   - TransparentFX
