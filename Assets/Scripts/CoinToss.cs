@@ -6,10 +6,10 @@ public class CoinToss
 {
     public Outcome TossCoin(int winProb){
         var rand = new Random();
-        var probability = rand.Next(1, 100);
-        if(winProb > probability){
-            return Outcome.Lose;
+        var probability = rand.Next(0, 100);
+        if(probability <= winProb){
+            return Outcome.Win;
         }
-        return Outcome.Win;
+        return Outcome.Lose;
     }
 }
