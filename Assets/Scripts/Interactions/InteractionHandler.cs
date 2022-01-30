@@ -24,6 +24,9 @@ public class InteractionHandler : MonoBehaviour
     private DialogHandler dialogHandler;
     private AlertMaker alertMaker;
 
+    [SerializeField]
+    private Animator animator;
+
     void Start()
     {
         coinTosser = new CoinToss();
@@ -77,10 +80,129 @@ public class InteractionHandler : MonoBehaviour
                         case InteractionType.Stone:
                             dialogHandler.OpenDialog("Do you want to mine the stones? Your success rate is: " + playerData.sucessRate + "%", OnAcceptMineStone, ResetInteraction);
                             break;
+                        case InteractionType.WoodenChest:
+                            dialogHandler.OpenDialog("Do you want to open this Wooden chest? Your success rate is: " + playerData.sucessRate + "%", OnAcceptWoodenChest, ResetInteraction);
+                        break;
+                        case InteractionType.SilverChest:
+                            dialogHandler.OpenDialog("Do you want to open this Silver chest? Your success rate is: " + (playerData.sucessRate - 10f) + "%", OnAcceptSilverChest, ResetInteraction);
+                        break;
+                        case InteractionType.GoldChest:
+                            dialogHandler.OpenDialog("Do you want to open this Golden chest? Your success rate is: " + (playerData.sucessRate - 20f) + "%", OnAcceptGoldenChest, ResetInteraction);
+                        break;
+                        case InteractionType.MagicChest:
+                            dialogHandler.OpenDialog("Do you want to open this Magic chest? Your success rate is: " + (playerData.sucessRate - 30f) + "%", OnAcceptMagicChest, ResetInteraction);
+                        break;
+                        case InteractionType.DeathChest:
+                            dialogHandler.OpenDialog("Do you want to open this Death chest? Your success rate is: " + (playerData.sucessRate - 50f) + "%", OnAcceptGoldenChest, ResetInteraction);
+                        break;
                     }
                 }
             }
         }
+    }
+
+    public IEnumerator PlayFightingAnimation(){
+        Debug.Log("OK");
+        animator.SetBool("IsFighting", true);
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("IsFighting", false);
+    }
+
+    public void OnAcceptWoodenChest(){
+        if (coinTosser.TossCoin((int)playerData.sucessRate) == Outcome.Lose)
+        {
+            playerData.Damage(10f);
+            alertMaker.ShowAlert("You have failed to open the chest!", 2f);
+            GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+            TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+            return;
+        }
+        int generatedBones = UnityEngine.Random.Range(1, 3);
+        int generatedWood = UnityEngine.Random.Range(1, 6);
+        int generatedStone = UnityEngine.Random.Range(1, 8);
+        playerData.bones += generatedBones;
+        playerData.wood += generatedWood;
+        playerData.stone += generatedStone;
+        GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+        alertMaker.ShowAlert("You have opened the chest and received: " + generatedBones + " bones, " + generatedWood + " wood, " + generatedStone + " stone", 2f);
+        StartCoroutine("PlayFightingAnimation");
+    }
+
+    public void OnAcceptSilverChest(){
+        if (coinTosser.TossCoin((int)playerData.sucessRate - 10) == Outcome.Lose)
+        {
+            playerData.Damage(20f);
+            alertMaker.ShowAlert("You have failed to open the chest!", 2f);
+            GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+            TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+            return;
+        }
+        int generatedBones = UnityEngine.Random.Range(4, 12);
+        int generatedWood = UnityEngine.Random.Range(5, 15);
+        int generatedStone = UnityEngine.Random.Range(4, 13);
+        playerData.bones += generatedBones;
+        playerData.wood += generatedWood;
+        playerData.stone += generatedStone;
+        GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+        alertMaker.ShowAlert("You have opened the chest and received: " + generatedBones + " bones, " + generatedWood + " wood, " + generatedStone + " stone", 2f);
+        StartCoroutine("PlayFightingAnimation");
+    }
+
+    public void OnAcceptGoldenChest(){
+        if (coinTosser.TossCoin((int)playerData.sucessRate - 20) == Outcome.Lose)
+        {
+            playerData.Damage(30f);
+            alertMaker.ShowAlert("You have failed to open the chest!", 2f);
+            GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+            TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+            return;
+        }
+        int generatedBones = UnityEngine.Random.Range(10, 30);
+        int generatedWood = UnityEngine.Random.Range(10, 30);
+        int generatedStone = UnityEngine.Random.Range(10, 30);
+        playerData.bones += generatedBones;
+        playerData.wood += generatedWood;
+        playerData.stone += generatedStone;
+        GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+        alertMaker.ShowAlert("You have opened the chest and received: " + generatedBones + " bones, " + generatedWood + " wood, " + generatedStone + " stone", 2f);
+        StartCoroutine("PlayFightingAnimation");
+    }
+
+    public void OnAcceptMagicChest(){
+        if (coinTosser.TossCoin((int)playerData.sucessRate - 30) == Outcome.Lose)
+        {
+            playerData.Damage(20f);
+            alertMaker.ShowAlert("You have failed to open the chest!", 2f);
+            GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+            TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+            return;
+        }
+        int generateChance = UnityEngine.Random.Range(1, 10);
+        playerData.sucessRate += generateChance;
+        GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+        alertMaker.ShowAlert("You have opened the chest and your luck increased by: " + generateChance + "%", 2f);
+        StartCoroutine("PlayFightingAnimation");
+    }
+
+    public void OnAcceptDeathChest(){
+        if (coinTosser.TossCoin((int)playerData.sucessRate - 50) == Outcome.Lose)
+        {
+            playerData.Damage(20f);
+            alertMaker.ShowAlert("You have failed to open the chest!", 2f);
+            GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+            TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+            return;
+        }
+        int generateChance = UnityEngine.Random.Range(10, 30);
+        playerData.sucessRate += generateChance;
+        GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+        alertMaker.ShowAlert("You have opened the chest and your luck increased by: " + generateChance + "%", 2f);
+        StartCoroutine("PlayFightingAnimation");
     }
 
     public void OnAcceptSlay()
@@ -97,6 +219,7 @@ public class InteractionHandler : MonoBehaviour
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
         TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("You have slayed the creature and received " + generatedBones + " bones", 2f);
+        StartCoroutine("PlayFightingAnimation");
     }
 
     public void OnAcceptChopWood()
@@ -112,6 +235,7 @@ public class InteractionHandler : MonoBehaviour
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
         TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("You have chopped the tree and got " + generatedWood + " wood", 2f);
+        StartCoroutine("PlayFightingAnimation");
     }
 
     public void OnAcceptMineStone()
@@ -127,6 +251,7 @@ public class InteractionHandler : MonoBehaviour
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
         TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("You have mined the stone and got " + generatedStone + " stone", 2f);
+        StartCoroutine("PlayFightingAnimation");
     }
 
     public void OnAcceptFightBoss()
@@ -140,6 +265,7 @@ public class InteractionHandler : MonoBehaviour
         GameObject.Destroy(this.currentlyInterractingObject.gameObject);
         TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
         alertMaker.ShowAlert("Congratulations!!! You have killed sVilius!!!", 2f);
+        StartCoroutine("PlayFightingAnimation");
     }
 
     public void ResetInteraction()

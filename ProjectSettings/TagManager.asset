@@ -13,6 +13,11 @@ TagManager:
   - Grass
   - Snow
   - Boss
+  - GoldenChest
+  - WoodenChest
+  - SilverChest
+  - DeathChest
+  - MagicChest
   layers:
   - Default
   - TransparentFX

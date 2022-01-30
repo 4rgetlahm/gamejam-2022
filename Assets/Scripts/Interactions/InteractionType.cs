@@ -4,7 +4,11 @@ using UnityEngine;
 
 public enum InteractionType
 {
-    Chest,
+    WoodenChest,
+    SilverChest,
+    GoldChest,
+    MagicChest,
+    DeathChest,
     Enemy,
     Boss,
     Wood,
