@@ -69,7 +69,6 @@ public class InteractionHandler : MonoBehaviour
                         case InteractionType.STONE:
                             dialogHandler.OpenDialog("Do you want to mine the stones? Your success rate is: " + playerData.sucessRate + "%", OnAcceptMineStone, ResetInteraction);
                             break;
-                        
                     }
                 }
             }
