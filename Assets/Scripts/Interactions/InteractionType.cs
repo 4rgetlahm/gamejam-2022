@@ -4,9 +4,9 @@ using UnityEngine;
 
 public enum InteractionType
 {
-    CHEST,
-    ENEMY,
-    BOSS,
-    WOOD,
-    STONE
+    Chest,
+    Enemy,
+    Boss,
+    Wood,
+    Stone
 }

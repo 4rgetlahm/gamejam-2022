@@ -31,13 +31,15 @@ public class InteractionHandler : MonoBehaviour
         alertMaker = GameObject.FindGameObjectWithTag("AlertMaker").GetComponent<AlertMaker>();
         foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Tree"))
         {
-            interactables.Add(new InteractableObject(gameObject, InteractionType.WOOD));
+            interactables.Add(new InteractableObject(gameObject, InteractionType.Wood));
         }
-        foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Stone")){
-            interactables.Add(new InteractableObject(gameObject, InteractionType.STONE));
+        foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Stone"))
+        {
+            interactables.Add(new InteractableObject(gameObject, InteractionType.Stone));
         }
-        foreach(GameObject gameObject in GameObject.FindGameObjectsWithTag("Enemy")){
-            interactables.Add(new InteractableObject(gameObject, InteractionType.ENEMY));
+        foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Enemy"))
+        {
+            interactables.Add(new InteractableObject(gameObject, InteractionType.Enemy));
         }
     }
 
@@ -59,17 +61,20 @@ public class InteractionHandler : MonoBehaviour
                 if (IsNear(interactableObject))
                 {
                     currentlyInterractingObject = interactableObject;
-                    switch (interactableObject.interactionType){
-                        case InteractionType.ENEMY:
+                    switch (interactableObject.interactionType)
+                    {
+                        case InteractionType.Enemy:
                             dialogHandler.OpenDialog("Do you want to slay this creature? Your success rate is: " + playerData.sucessRate + "%", OnAcceptSlay, ResetInteraction);
                             break;
-                        case InteractionType.WOOD:
+                        case InteractionType.Wood:
                             dialogHandler.OpenDialog("Do you want to chop the tree? Your success rate is: " + playerData.sucessRate + "%", OnAcceptChopWood, ResetInteraction);
                             break;
-                        case InteractionType.STONE:
+                        case InteractionType.Stone:
                             dialogHandler.OpenDialog("Do you want to mine the stones? Your success rate is: " + playerData.sucessRate + "%", OnAcceptMineStone, ResetInteraction);
                             break;
-                        
+                        case InteractionType.Boss:
+                            dialogHandler.OpenDialog("Do you want to fight the sVilius? Your success rate is: " + playerData.sucessRate + "%", OnAcceptFightBoss, ResetInteraction);
+                            break;
                     }
                 }
             }
@@ -78,7 +83,8 @@ public class InteractionHandler : MonoBehaviour
 
     public void OnAcceptSlay()
     {
-        if(coinTosser.TossCoin((int) playerData.sucessRate) == Outcome.Lose){
+        if (coinTosser.TossCoin((int)playerData.sucessRate) == Outcome.Lose)
+        {
             playerData.Damage(10f);
             alertMaker.ShowAlert("You have failed to slay the creature!", 2f);
             return;
@@ -93,7 +99,8 @@ public class InteractionHandler : MonoBehaviour
 
     public void OnAcceptChopWood()
     {
-        if(coinTosser.TossCoin((int) playerData.sucessRate) == Outcome.Lose){
+        if (coinTosser.TossCoin((int)playerData.sucessRate) == Outcome.Lose)
+        {
             playerData.Damage(2f);
             alertMaker.ShowAlert("You have failed to chop the tree!", 2f);
             return;
@@ -105,8 +112,10 @@ public class InteractionHandler : MonoBehaviour
         alertMaker.ShowAlert("You have chopped the tree and got " + generatedWood + " wood", 2f);
     }
 
-    public void OnAcceptMineStone(){
-        if(coinTosser.TossCoin((int) playerData.sucessRate) == Outcome.Lose){
+    public void OnAcceptMineStone()
+    {
+        if (coinTosser.TossCoin((int)playerData.sucessRate) == Outcome.Lose)
+        {
             playerData.Damage(5f);
             alertMaker.ShowAlert("You have failed to mine the stone!", 2f);
             return;
@@ -118,14 +127,28 @@ public class InteractionHandler : MonoBehaviour
         alertMaker.ShowAlert("You have mined the stone and got " + generatedStone + " stone", 2f);
     }
 
-    public void ResetInteraction(){
+    public void OnAcceptFightBoss()
+    {
+        if (coinTosser.TossCoin((int)playerData.sucessRate) == Outcome.Lose)
+        {
+            playerData.Damage(5f);
+            alertMaker.ShowAlert("You have failed to kill sVilius!", 2f);
+            return;
+        }
+        GameObject.Destroy(this.currentlyInterractingObject.gameObject);
+        TouchedGameObjects.GameObjects.Remove(this.currentlyInterractingObject.gameObject);
+        alertMaker.ShowAlert("You have killed sVilius!!!", 2f);
+    }
+
+    public void ResetInteraction()
+    {
         this.currentlyInterractingObject = null;
     }
 
 
     public void OnGoodClick()
     {
-        
+
         //GameObject.Destroy(interactableObject.gameObject);
     }
     private bool IsNear(InteractableObject intObj)
